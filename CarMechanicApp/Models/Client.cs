@@ -9,7 +9,9 @@ namespace CarMechanicApp.Models
 {
     class Client : Person
     {
-        [MaxLength(2)]
+        
         public int Discount { get; set; }
+
+        public ICollection<Vehicle> Vehicles { get; set; }
     }
 }

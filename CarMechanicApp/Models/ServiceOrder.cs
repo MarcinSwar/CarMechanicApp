@@ -9,6 +9,8 @@ namespace CarMechanicApp.Models
 {
     class ServiceOrder
     {
+        public int Id { get; set; }
+
         [Required]
         public DateTime StartDate { get; set; }
 

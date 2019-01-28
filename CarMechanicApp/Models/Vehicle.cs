@@ -29,7 +29,12 @@ namespace CarMechanicApp.Models
         [StringLength(30)]
         public string Colour { get; set; }
 
-        [MaxLength(4)]
+        
         public int Year { get; set; }
+
+        public ICollection<ServiceOrder> ServiceOrders { get; set; }
+        public Client Client { get; set; }
+        [Required]
+        public int ClientId { get; set; }
     }
 }
