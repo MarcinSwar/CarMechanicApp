@@ -51,7 +51,43 @@ namespace CarMechanicApp.Migrations
                     PhoneNo = "692692123",
                     Address = "Wo³omin, Pusta 21",
                     Salary = 5000
+                },
+                 new Mechanic
+                 {
+                     FirstName = "Robert",
+                     LastName = "Malanowski",
+                     Salary = 4000
+                 }
+                 );
+            context.Vehicles.AddOrUpdate(
+                p => p.PlateNo,
+                new Vehicle
+                {
+                    PlateNo = "WW12345",
+                    Brand = "Fiat",
+                    Model = "126p",
+                    ClientId = 1
+                },
+                 new Vehicle
+                 {
+                     PlateNo = "WA00001",
+                     Brand = "Mercedes",
+                     Model = "190d",
+                     Colour = "Bia³y",
+                     Year =1996,
+                     ClientId = 2
+                 }
+                );
+            context.ServiceOrders.AddOrUpdate(
+                p => p.StartDate,
+                new ServiceOrder
+                {
+                    StartDate = DateTime.Now,
+                    MechanicId = 1,
+                    VehicleId = 1,
+                    Description = "Problemy z uruchomieniem silnika"
                 }
+
                 );
         }
     }
