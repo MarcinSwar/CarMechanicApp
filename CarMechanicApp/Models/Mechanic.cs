@@ -11,7 +11,7 @@ namespace CarMechanicApp.Models
     {
         [Range(0, 30000)]
         [Required]
-        public decimal Salary { get; set; }
+        public decimal? Salary { get; set; }
 
         public ICollection<ServiceOrder> ServiceOrders { get; set; }
     }

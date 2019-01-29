@@ -14,7 +14,7 @@ namespace CarMechanicApp.Models
         [Required]
         public DateTime StartDate { get; set; }
 
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         public Mechanic Mechanic { get; set; }
         [Required]

@@ -64,6 +64,14 @@
     <Compile Include="Migrations\201901282351061_Initial.Designer.cs">
       <DependentUpon>201901282351061_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901282358099_nullableEnddate.cs" />
+    <Compile Include="Migrations\201901282358099_nullableEnddate.Designer.cs">
+      <DependentUpon>201901282358099_nullableEnddate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901290003333_modifiednullables.cs" />
+    <Compile Include="Migrations\201901290003333_modifiednullables.Designer.cs">
+      <DependentUpon>201901290003333_modifiednullables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Mechanic.cs" />
@@ -74,6 +82,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Migrations\201901282351061_Initial.resx">
       <DependentUpon>201901282351061_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901282358099_nullableEnddate.resx">
+      <DependentUpon>201901282358099_nullableEnddate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901290003333_modifiednullables.resx">
+      <DependentUpon>201901290003333_modifiednullables.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
