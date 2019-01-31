@@ -36,5 +36,13 @@ namespace CarMechanicApp.Models
         public Client Client { get; set; }
         [Required]
         public int ClientId { get; set; }
+
+        public string VehicleInfo
+        {
+            get
+            {
+                return string.Format("{0} {1} {2}", PlateNo, Brand, Model).Trim();
+            }
+        }
     }
 }

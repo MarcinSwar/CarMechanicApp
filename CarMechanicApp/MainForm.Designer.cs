@@ -38,17 +38,21 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainFormSplitter = new System.Windows.Forms.Splitter();
             this.mainFormTabControl = new System.Windows.Forms.TabControl();
+            this.mainFormContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.dodajZlecenieSerwisoweToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodajKlientaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodajPojazdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CustomersTabPage = new System.Windows.Forms.TabPage();
-            this.vehiclesTabPage = new System.Windows.Forms.TabPage();
-            this.serviceOrdersTabPage = new System.Windows.Forms.TabPage();
-            this.addServiceOrderButton = new System.Windows.Forms.Button();
-            this.showServiceOrdersButton = new System.Windows.Forms.Button();
-            this.serviceOrdersDataGridView = new System.Windows.Forms.DataGridView();
-            this.vehiclesDataGridView = new System.Windows.Forms.DataGridView();
             this.CustomersDataGridView = new System.Windows.Forms.DataGridView();
             this.Vehicles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vehiclesTabPage = new System.Windows.Forms.TabPage();
+            this.vehiclesDataGridView = new System.Windows.Forms.DataGridView();
+            this.serviceOrdersTabPage = new System.Windows.Forms.TabPage();
+            this.serviceOrdersDataGridView = new System.Windows.Forms.DataGridView();
             this.mechanicsTabPage = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.addServiceOrderButton = new System.Windows.Forms.Button();
+            this.showServiceOrdersButton = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,15 +60,6 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plateNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serviceOrdersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vehicleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,7 +70,6 @@
             this.vehicleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serviceOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mechanicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,15 +77,26 @@
             this.addressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serviceOrdersDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mechanicBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plateNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serviceOrdersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             this.mainFormTabControl.SuspendLayout();
+            this.mainFormContextMenuStrip.SuspendLayout();
             this.CustomersTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).BeginInit();
             this.vehiclesTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiclesDataGridView)).BeginInit();
             this.serviceOrdersTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.serviceOrdersDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vehiclesDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).BeginInit();
             this.mechanicsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
@@ -109,7 +114,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip.Size = new System.Drawing.Size(719, 30);
+            this.menuStrip.Size = new System.Drawing.Size(986, 30);
             this.menuStrip.TabIndex = 1;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -149,19 +154,20 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(719, 30);
+            this.panel2.Size = new System.Drawing.Size(986, 30);
             this.panel2.TabIndex = 2;
             // 
             // mainFormSplitter
             // 
             this.mainFormSplitter.Location = new System.Drawing.Point(0, 30);
             this.mainFormSplitter.Name = "mainFormSplitter";
-            this.mainFormSplitter.Size = new System.Drawing.Size(110, 262);
+            this.mainFormSplitter.Size = new System.Drawing.Size(110, 399);
             this.mainFormSplitter.TabIndex = 3;
             this.mainFormSplitter.TabStop = false;
             // 
             // mainFormTabControl
             // 
+            this.mainFormTabControl.ContextMenuStrip = this.mainFormContextMenuStrip;
             this.mainFormTabControl.Controls.Add(this.CustomersTabPage);
             this.mainFormTabControl.Controls.Add(this.vehiclesTabPage);
             this.mainFormTabControl.Controls.Add(this.serviceOrdersTabPage);
@@ -170,8 +176,39 @@
             this.mainFormTabControl.Location = new System.Drawing.Point(110, 30);
             this.mainFormTabControl.Name = "mainFormTabControl";
             this.mainFormTabControl.SelectedIndex = 0;
-            this.mainFormTabControl.Size = new System.Drawing.Size(609, 262);
+            this.mainFormTabControl.Size = new System.Drawing.Size(876, 399);
             this.mainFormTabControl.TabIndex = 4;
+            this.mainFormTabControl.Click += new System.EventHandler(this.mainFormTabControl_Click);
+            // 
+            // mainFormContextMenuStrip
+            // 
+            this.mainFormContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dodajZlecenieSerwisoweToolStripMenuItem,
+            this.dodajKlientaToolStripMenuItem,
+            this.dodajPojazdToolStripMenuItem});
+            this.mainFormContextMenuStrip.Name = "mainFormContextMenuStrip";
+            this.mainFormContextMenuStrip.Size = new System.Drawing.Size(208, 92);
+            // 
+            // dodajZlecenieSerwisoweToolStripMenuItem
+            // 
+            this.dodajZlecenieSerwisoweToolStripMenuItem.Name = "dodajZlecenieSerwisoweToolStripMenuItem";
+            this.dodajZlecenieSerwisoweToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.dodajZlecenieSerwisoweToolStripMenuItem.Text = "Dodaj zlecenie serwisowe";
+            this.dodajZlecenieSerwisoweToolStripMenuItem.Click += new System.EventHandler(this.dodajZlecenieSerwisoweToolStripMenuItem_Click);
+            // 
+            // dodajKlientaToolStripMenuItem
+            // 
+            this.dodajKlientaToolStripMenuItem.Name = "dodajKlientaToolStripMenuItem";
+            this.dodajKlientaToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.dodajKlientaToolStripMenuItem.Text = "Dodaj Klienta";
+            this.dodajKlientaToolStripMenuItem.Click += new System.EventHandler(this.dodajKlientaToolStripMenuItem_Click);
+            // 
+            // dodajPojazdToolStripMenuItem
+            // 
+            this.dodajPojazdToolStripMenuItem.Name = "dodajPojazdToolStripMenuItem";
+            this.dodajPojazdToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.dodajPojazdToolStripMenuItem.Text = "Dodaj pojazd";
+            this.dodajPojazdToolStripMenuItem.Click += new System.EventHandler(this.dodajPojazdToolStripMenuItem_Click);
             // 
             // CustomersTabPage
             // 
@@ -179,10 +216,40 @@
             this.CustomersTabPage.Location = new System.Drawing.Point(4, 22);
             this.CustomersTabPage.Name = "CustomersTabPage";
             this.CustomersTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.CustomersTabPage.Size = new System.Drawing.Size(601, 236);
+            this.CustomersTabPage.Size = new System.Drawing.Size(868, 373);
             this.CustomersTabPage.TabIndex = 0;
             this.CustomersTabPage.Text = "Klienci";
             this.CustomersTabPage.UseVisualStyleBackColor = true;
+            // 
+            // CustomersDataGridView
+            // 
+            this.CustomersDataGridView.AllowUserToAddRows = false;
+            this.CustomersDataGridView.AllowUserToDeleteRows = false;
+            this.CustomersDataGridView.AutoGenerateColumns = false;
+            this.CustomersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CustomersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.phoneNoDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.discountDataGridViewTextBoxColumn,
+            this.Vehicles});
+            this.CustomersDataGridView.DataSource = this.clientBindingSource;
+            this.CustomersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CustomersDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.CustomersDataGridView.Name = "CustomersDataGridView";
+            this.CustomersDataGridView.ReadOnly = true;
+            this.CustomersDataGridView.Size = new System.Drawing.Size(862, 367);
+            this.CustomersDataGridView.TabIndex = 0;
+            this.CustomersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomersDataGridView_CellContentClick);
+            // 
+            // Vehicles
+            // 
+            this.Vehicles.DataPropertyName = "Vehicles";
+            this.Vehicles.HeaderText = "Pojazdy";
+            this.Vehicles.Name = "Vehicles";
+            this.Vehicles.ReadOnly = true;
             // 
             // vehiclesTabPage
             // 
@@ -190,63 +257,10 @@
             this.vehiclesTabPage.Location = new System.Drawing.Point(4, 22);
             this.vehiclesTabPage.Name = "vehiclesTabPage";
             this.vehiclesTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.vehiclesTabPage.Size = new System.Drawing.Size(601, 236);
+            this.vehiclesTabPage.Size = new System.Drawing.Size(868, 373);
             this.vehiclesTabPage.TabIndex = 1;
             this.vehiclesTabPage.Text = "Pojazdy";
             this.vehiclesTabPage.UseVisualStyleBackColor = true;
-            // 
-            // serviceOrdersTabPage
-            // 
-            this.serviceOrdersTabPage.Controls.Add(this.serviceOrdersDataGridView);
-            this.serviceOrdersTabPage.Location = new System.Drawing.Point(4, 22);
-            this.serviceOrdersTabPage.Name = "serviceOrdersTabPage";
-            this.serviceOrdersTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.serviceOrdersTabPage.Size = new System.Drawing.Size(601, 236);
-            this.serviceOrdersTabPage.TabIndex = 2;
-            this.serviceOrdersTabPage.Text = "Zlecenia serwisowe";
-            this.serviceOrdersTabPage.UseVisualStyleBackColor = true;
-            // 
-            // addServiceOrderButton
-            // 
-            this.addServiceOrderButton.Location = new System.Drawing.Point(12, 36);
-            this.addServiceOrderButton.Name = "addServiceOrderButton";
-            this.addServiceOrderButton.Size = new System.Drawing.Size(92, 71);
-            this.addServiceOrderButton.TabIndex = 5;
-            this.addServiceOrderButton.Text = "Dodaj zlecenie serwisowe";
-            this.addServiceOrderButton.UseVisualStyleBackColor = true;
-            // 
-            // showServiceOrdersButton
-            // 
-            this.showServiceOrdersButton.Location = new System.Drawing.Point(12, 113);
-            this.showServiceOrdersButton.Name = "showServiceOrdersButton";
-            this.showServiceOrdersButton.Size = new System.Drawing.Size(92, 71);
-            this.showServiceOrdersButton.TabIndex = 6;
-            this.showServiceOrdersButton.Text = "Wyświetl zlecenia serwisowe";
-            this.showServiceOrdersButton.UseVisualStyleBackColor = true;
-            // 
-            // serviceOrdersDataGridView
-            // 
-            this.serviceOrdersDataGridView.AllowUserToAddRows = false;
-            this.serviceOrdersDataGridView.AllowUserToDeleteRows = false;
-            this.serviceOrdersDataGridView.AutoGenerateColumns = false;
-            this.serviceOrdersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.serviceOrdersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.startDateDataGridViewTextBoxColumn,
-            this.endDateDataGridViewTextBoxColumn,
-            this.mechanicDataGridViewTextBoxColumn,
-            this.mechanicIdDataGridViewTextBoxColumn,
-            this.vehicleDataGridViewTextBoxColumn,
-            this.vehicleIdDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn});
-            this.serviceOrdersDataGridView.DataSource = this.serviceOrderBindingSource;
-            this.serviceOrdersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.serviceOrdersDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.serviceOrdersDataGridView.Name = "serviceOrdersDataGridView";
-            this.serviceOrdersDataGridView.ReadOnly = true;
-            this.serviceOrdersDataGridView.Size = new System.Drawing.Size(595, 230);
-            this.serviceOrdersDataGridView.TabIndex = 0;
-            this.serviceOrdersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // vehiclesDataGridView
             // 
@@ -269,38 +283,44 @@
             this.vehiclesDataGridView.Location = new System.Drawing.Point(3, 3);
             this.vehiclesDataGridView.Name = "vehiclesDataGridView";
             this.vehiclesDataGridView.ReadOnly = true;
-            this.vehiclesDataGridView.Size = new System.Drawing.Size(595, 230);
+            this.vehiclesDataGridView.Size = new System.Drawing.Size(862, 367);
             this.vehiclesDataGridView.TabIndex = 0;
             // 
-            // CustomersDataGridView
+            // serviceOrdersTabPage
             // 
-            this.CustomersDataGridView.AllowUserToAddRows = false;
-            this.CustomersDataGridView.AllowUserToDeleteRows = false;
-            this.CustomersDataGridView.AutoGenerateColumns = false;
-            this.CustomersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CustomersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn2,
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
-            this.phoneNoDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.discountDataGridViewTextBoxColumn,
-            this.Vehicles});
-            this.CustomersDataGridView.DataSource = this.clientBindingSource;
-            this.CustomersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CustomersDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.CustomersDataGridView.Name = "CustomersDataGridView";
-            this.CustomersDataGridView.ReadOnly = true;
-            this.CustomersDataGridView.Size = new System.Drawing.Size(595, 230);
-            this.CustomersDataGridView.TabIndex = 0;
-            this.CustomersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomersDataGridView_CellContentClick);
+            this.serviceOrdersTabPage.Controls.Add(this.serviceOrdersDataGridView);
+            this.serviceOrdersTabPage.Location = new System.Drawing.Point(4, 22);
+            this.serviceOrdersTabPage.Name = "serviceOrdersTabPage";
+            this.serviceOrdersTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.serviceOrdersTabPage.Size = new System.Drawing.Size(868, 373);
+            this.serviceOrdersTabPage.TabIndex = 2;
+            this.serviceOrdersTabPage.Text = "Zlecenia serwisowe";
+            this.serviceOrdersTabPage.UseVisualStyleBackColor = true;
+            this.serviceOrdersTabPage.Click += new System.EventHandler(this.serviceOrdersTabPage_Click);
             // 
-            // Vehicles
+            // serviceOrdersDataGridView
             // 
-            this.Vehicles.DataPropertyName = "Vehicles";
-            this.Vehicles.HeaderText = "Pojazdy";
-            this.Vehicles.Name = "Vehicles";
-            this.Vehicles.ReadOnly = true;
+            this.serviceOrdersDataGridView.AllowUserToAddRows = false;
+            this.serviceOrdersDataGridView.AllowUserToDeleteRows = false;
+            this.serviceOrdersDataGridView.AutoGenerateColumns = false;
+            this.serviceOrdersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.serviceOrdersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.startDateDataGridViewTextBoxColumn,
+            this.endDateDataGridViewTextBoxColumn,
+            this.mechanicDataGridViewTextBoxColumn,
+            this.mechanicIdDataGridViewTextBoxColumn,
+            this.vehicleDataGridViewTextBoxColumn,
+            this.vehicleIdDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn});
+            this.serviceOrdersDataGridView.DataSource = this.serviceOrderBindingSource;
+            this.serviceOrdersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.serviceOrdersDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.serviceOrdersDataGridView.Name = "serviceOrdersDataGridView";
+            this.serviceOrdersDataGridView.ReadOnly = true;
+            this.serviceOrdersDataGridView.Size = new System.Drawing.Size(862, 367);
+            this.serviceOrdersDataGridView.TabIndex = 0;
+            this.serviceOrdersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // mechanicsTabPage
             // 
@@ -308,7 +328,7 @@
             this.mechanicsTabPage.Location = new System.Drawing.Point(4, 22);
             this.mechanicsTabPage.Name = "mechanicsTabPage";
             this.mechanicsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.mechanicsTabPage.Size = new System.Drawing.Size(601, 236);
+            this.mechanicsTabPage.Size = new System.Drawing.Size(868, 373);
             this.mechanicsTabPage.TabIndex = 3;
             this.mechanicsTabPage.Text = "Mechanicy";
             this.mechanicsTabPage.UseVisualStyleBackColor = true;
@@ -329,8 +349,28 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(595, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(862, 367);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // addServiceOrderButton
+            // 
+            this.addServiceOrderButton.Location = new System.Drawing.Point(12, 36);
+            this.addServiceOrderButton.Name = "addServiceOrderButton";
+            this.addServiceOrderButton.Size = new System.Drawing.Size(92, 71);
+            this.addServiceOrderButton.TabIndex = 5;
+            this.addServiceOrderButton.Text = "Dodaj zlecenie serwisowe";
+            this.addServiceOrderButton.UseVisualStyleBackColor = true;
+            this.addServiceOrderButton.Click += new System.EventHandler(this.addServiceOrderButton_Click);
+            // 
+            // showServiceOrdersButton
+            // 
+            this.showServiceOrdersButton.Location = new System.Drawing.Point(12, 113);
+            this.showServiceOrdersButton.Name = "showServiceOrdersButton";
+            this.showServiceOrdersButton.Size = new System.Drawing.Size(92, 71);
+            this.showServiceOrdersButton.TabIndex = 6;
+            this.showServiceOrdersButton.Text = "Wyświetl zlecenia serwisowe";
+            this.showServiceOrdersButton.UseVisualStyleBackColor = true;
+            this.showServiceOrdersButton.Click += new System.EventHandler(this.showServiceOrdersButton_Click);
             // 
             // idDataGridViewTextBoxColumn2
             // 
@@ -378,70 +418,6 @@
             // clientBindingSource
             // 
             this.clientBindingSource.DataSource = typeof(CarMechanicApp.Models.Client);
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // plateNoDataGridViewTextBoxColumn
-            // 
-            this.plateNoDataGridViewTextBoxColumn.DataPropertyName = "PlateNo";
-            this.plateNoDataGridViewTextBoxColumn.HeaderText = "Nr rejestracyjny";
-            this.plateNoDataGridViewTextBoxColumn.Name = "plateNoDataGridViewTextBoxColumn";
-            this.plateNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // brandDataGridViewTextBoxColumn
-            // 
-            this.brandDataGridViewTextBoxColumn.DataPropertyName = "Brand";
-            this.brandDataGridViewTextBoxColumn.HeaderText = "Marka";
-            this.brandDataGridViewTextBoxColumn.Name = "brandDataGridViewTextBoxColumn";
-            this.brandDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // modelDataGridViewTextBoxColumn
-            // 
-            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
-            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
-            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // colourDataGridViewTextBoxColumn
-            // 
-            this.colourDataGridViewTextBoxColumn.DataPropertyName = "Colour";
-            this.colourDataGridViewTextBoxColumn.HeaderText = "Kolor nadwozia";
-            this.colourDataGridViewTextBoxColumn.Name = "colourDataGridViewTextBoxColumn";
-            this.colourDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "Rok produkcji";
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            this.yearDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // serviceOrdersDataGridViewTextBoxColumn
-            // 
-            this.serviceOrdersDataGridViewTextBoxColumn.DataPropertyName = "ServiceOrders";
-            this.serviceOrdersDataGridViewTextBoxColumn.HeaderText = "Zlecenia serwisowe";
-            this.serviceOrdersDataGridViewTextBoxColumn.Name = "serviceOrdersDataGridViewTextBoxColumn";
-            this.serviceOrdersDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // clientDataGridViewTextBoxColumn
-            // 
-            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
-            this.clientDataGridViewTextBoxColumn.HeaderText = "Właściciel";
-            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
-            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // clientIdDataGridViewTextBoxColumn
-            // 
-            this.clientIdDataGridViewTextBoxColumn.DataPropertyName = "ClientId";
-            this.clientIdDataGridViewTextBoxColumn.HeaderText = "Id Właściciela";
-            this.clientIdDataGridViewTextBoxColumn.Name = "clientIdDataGridViewTextBoxColumn";
-            this.clientIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // vehicleBindingSource
             // 
@@ -508,10 +484,6 @@
             this.serviceOrderBindingSource.DataSource = typeof(CarMechanicApp.Models.ServiceOrder);
             this.serviceOrderBindingSource.CurrentChanged += new System.EventHandler(this.serviceOrderBindingSource_CurrentChanged);
             // 
-            // mechanicBindingSource
-            // 
-            this.mechanicBindingSource.DataSource = typeof(CarMechanicApp.Models.Mechanic);
-            // 
             // idDataGridViewTextBoxColumn3
             // 
             this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
@@ -555,11 +527,80 @@
             this.serviceOrdersDataGridViewTextBoxColumn1.HeaderText = "Zlecenia serwisowe";
             this.serviceOrdersDataGridViewTextBoxColumn1.Name = "serviceOrdersDataGridViewTextBoxColumn1";
             // 
+            // mechanicBindingSource
+            // 
+            this.mechanicBindingSource.DataSource = typeof(CarMechanicApp.Models.Mechanic);
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // plateNoDataGridViewTextBoxColumn
+            // 
+            this.plateNoDataGridViewTextBoxColumn.DataPropertyName = "PlateNo";
+            this.plateNoDataGridViewTextBoxColumn.HeaderText = "Nr rejestracyjny";
+            this.plateNoDataGridViewTextBoxColumn.Name = "plateNoDataGridViewTextBoxColumn";
+            this.plateNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // brandDataGridViewTextBoxColumn
+            // 
+            this.brandDataGridViewTextBoxColumn.DataPropertyName = "Brand";
+            this.brandDataGridViewTextBoxColumn.HeaderText = "Marka";
+            this.brandDataGridViewTextBoxColumn.Name = "brandDataGridViewTextBoxColumn";
+            this.brandDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modelDataGridViewTextBoxColumn
+            // 
+            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
+            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
+            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
+            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // colourDataGridViewTextBoxColumn
+            // 
+            this.colourDataGridViewTextBoxColumn.DataPropertyName = "Colour";
+            this.colourDataGridViewTextBoxColumn.HeaderText = "Kolor nadwozia";
+            this.colourDataGridViewTextBoxColumn.Name = "colourDataGridViewTextBoxColumn";
+            this.colourDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
+            this.yearDataGridViewTextBoxColumn.HeaderText = "Rok produkcji";
+            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            this.yearDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // serviceOrdersDataGridViewTextBoxColumn
+            // 
+            this.serviceOrdersDataGridViewTextBoxColumn.DataPropertyName = "ServiceOrders";
+            this.serviceOrdersDataGridViewTextBoxColumn.HeaderText = "Zlecenia serwisowe";
+            this.serviceOrdersDataGridViewTextBoxColumn.Name = "serviceOrdersDataGridViewTextBoxColumn";
+            this.serviceOrdersDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clientDataGridViewTextBoxColumn
+            // 
+            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
+            this.clientDataGridViewTextBoxColumn.HeaderText = "Właściciel";
+            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
+            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // clientIdDataGridViewTextBoxColumn
+            // 
+            this.clientIdDataGridViewTextBoxColumn.DataPropertyName = "ClientId";
+            this.clientIdDataGridViewTextBoxColumn.HeaderText = "Id Właściciela";
+            this.clientIdDataGridViewTextBoxColumn.Name = "clientIdDataGridViewTextBoxColumn";
+            this.clientIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 292);
+            this.ClientSize = new System.Drawing.Size(986, 429);
             this.Controls.Add(this.showServiceOrdersButton);
             this.Controls.Add(this.addServiceOrderButton);
             this.Controls.Add(this.mainFormTabControl);
@@ -576,12 +617,13 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.mainFormTabControl.ResumeLayout(false);
+            this.mainFormContextMenuStrip.ResumeLayout(false);
             this.CustomersTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).EndInit();
             this.vehiclesTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.vehiclesDataGridView)).EndInit();
             this.serviceOrdersTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.serviceOrdersDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vehiclesDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).EndInit();
             this.mechanicsTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
@@ -627,15 +669,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn discountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vehicles;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plateNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colourDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn serviceOrdersDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clientIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabPage mechanicsTabPage;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource mechanicBindingSource;
@@ -646,6 +679,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn salaryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn serviceOrdersDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ContextMenuStrip mainFormContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem dodajZlecenieSerwisoweToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dodajKlientaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dodajPojazdToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plateNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn brandDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colourDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serviceOrdersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientIdDataGridViewTextBoxColumn;
     }
 }
 

@@ -13,6 +13,8 @@ namespace CarMechanicApp
 {
     public partial class MainForm : Form
     {
+        private AddServiceOrderForm AddServiceOrder;
+        private AddVehicleForm AddVehicle;
         public MainForm()
         {
             InitializeComponent();
@@ -29,6 +31,18 @@ namespace CarMechanicApp
                 mechanicBindingSource.DataSource = context.Mechanics.ToList();
             }
         }
+
+        private void OpenServiceOrderDialog() {
+            AddServiceOrder = new AddServiceOrderForm();
+            AddServiceOrder.Show();
+        }
+
+        private void OpenAddVehicleDialog()
+        {
+            AddVehicle = new AddVehicleForm();
+            AddVehicle.Show();
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -56,6 +70,42 @@ namespace CarMechanicApp
         }
 
         private void CustomersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void addServiceOrderButton_Click(object sender, EventArgs e)
+        {
+            OpenServiceOrderDialog();
+        }
+
+        private void serviceOrdersTabPage_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mainFormTabControl_Click(object sender, EventArgs e)
+        {
+            //serviceOrderBindingSource.ResetBindings(false);
+            GetLists();
+        }
+
+        private void dodajZlecenieSerwisoweToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenServiceOrderDialog();
+        }
+
+        private void showServiceOrdersButton_Click(object sender, EventArgs e)
+        {
+            mainFormTabControl.SelectTab(2);
+        }
+
+        private void dodajPojazdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenAddVehicleDialog();
+        }
+
+        private void dodajKlientaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
