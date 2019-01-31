@@ -102,6 +102,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CarMechanicApp.Models.Client.datasource" />
+    <None Include="Properties\DataSources\CarMechanicApp.Models.Mechanic.datasource" />
+    <None Include="Properties\DataSources\CarMechanicApp.Models.ServiceOrder.datasource" />
+    <None Include="Properties\DataSources\CarMechanicApp.Models.Vehicle.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

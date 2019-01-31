@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarMechanicApp.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace CarMechanicApp
         public MainForm()
         {
             InitializeComponent();
+            GetLists();
+        }
+
+        private void GetLists()
+        {
+            using (var context = new CarMechanicContext())
+            {
+                serviceOrderBindingSource.DataSource = context.ServiceOrders.ToList();
+                vehicleBindingSource.DataSource = context.Vehicles.ToList();
+                clientBindingSource.DataSource = context.Clients.ToList();
+                mechanicBindingSource.DataSource = context.Mechanics.ToList();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,6 +43,21 @@ namespace CarMechanicApp
         private void zakończToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void serviceOrderBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CustomersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
